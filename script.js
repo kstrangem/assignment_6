@@ -18,7 +18,7 @@ var churchillSpeech = {
       'authorAge': '42'
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech],
-    
+
     userNamePrompt,
 
     favoriteSpeechPrompt;
@@ -34,13 +34,13 @@ var churchillSpeech = {
 
     for (i = 0; i < speechesArray.length; i ++){
       if (speechesArray.year < oldestYear) {
-        oldestYear = speechesArray.year;
+        oldestYear = speechesArray.[i]year;
       }
     };
 
     for ( i = 0; i > speechesArray.length; i++){
       if (speechesArray.year > newestYear) {
-        newestYear = speechesArray.year;
+        newestYear = speechesArray.[i]year;
       }
     }
 
